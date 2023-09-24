@@ -1,0 +1,223 @@
+#nav {
+  width: 100%;
+}
+
+#nav .navBar {
+  z-index: 99999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav .navBar .desktop-logo img {
+  width: 60px;
+  height: 80px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 100px;
+}
+
+#nav .navBar .mobile-logo {
+  display: none;
+}
+
+#nav .navBar .mobile-logo img {
+  width: 60px;
+  height: 80px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#nav .navBar .nav-items {
+  display: flex;
+}
+
+#nav li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+#nav .downloads {
+  color: white;
+  cursor: pointer;
+}
+
+#nav .active {
+  font-weight: bolder !important;
+  color: white !important;
+}
+
+#nav li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: white;
+  display: block;
+  transition: 0.5s;
+}
+
+#nav li:hover::after {
+  width: 100%;
+}
+
+#nav .openMenu {
+  display: none;
+  font-size: 30px;
+  color: black;
+  margin-left: 20px;
+}
+
+#nav .closeMenu {
+  display: none;
+  font-size: 30px;
+  color: var(--bg-primary);
+}
+
+#nav .navDetails {
+  display: none;
+}
+
+#nav .rightBoxOverlay {
+  display: none;
+}
+
+#nav .btn {
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #nav .navBar .desktop-logo {
+    display: none;
+  }
+
+  #nav .navBar .mobile-logo {
+    display: block;
+  }
+
+  #nav .nav-items {
+    background-color: #eceeef;
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s all ease;
+    padding: 100px 50px 0px 50px;
+    z-index: 9999;
+    transform: scale(0, 1);
+    transform-origin: left center;
+  }
+
+  #nav .show-nav {
+    transform: scale(1, 1);
+  }
+
+  #nav .nav-items li {
+    margin: 5px 0px;
+  }
+
+  #nav li:hover::after {
+    width: 0%;
+  }
+
+  #nav .nav-items a {
+    color: #777d81;
+  }
+
+  #nav .downloads {
+    color: #777d81;
+  }
+
+  #nav .openMenu {
+    display: block;
+  }
+
+  #nav .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #nav .navDetails {
+    margin-top: 50px;
+    display: block;
+    color: #4e54c8;
+  }
+  #nav .btn {
+    display: none;
+  }
+  #nav .rightBoxOverlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.473);
+    transition: 0.7s all ease;
+    transform: scale(0, 1);
+    transform-origin: left center;
+  }
+
+  #nav .show-overlay {
+    transform: scale(1, 1);
+  }
+  #nav .mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #nav .navBar {
+    z-index: 99999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav .nav-items {
+    width: 80%;
+    max-width: 80%;
+    padding: 60px 10px 0px 20px;
+  }
+  #nav .navDetails {
+    margin-top: 20px;
+  }
+  #nav .navDetails p {
+    font-size: 13px;
+  }
+  #nav .btn {
+    display: none;
+  }
+
+  #nav .darkNav {
+    background-color: rgba(0, 0, 0, 0.473);
+  }
+
+  #nav .active {
+    font-weight: bolder !important;
+    color: #5b3773 !important;
+  }
+}
