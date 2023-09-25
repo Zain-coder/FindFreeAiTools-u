@@ -71,7 +71,7 @@ const Featured = () => {
       {!isLoading && (
         <div
           className="grid lg:grid-cols-3 md:grid-cols-2 
-        xl:mx-20 md:px-4      my-2 place-content-center
+        xl:mx-20 md:px-4      my-2 place-content-center place-item-center
       "
         >
           {tools?.map((items) => (
