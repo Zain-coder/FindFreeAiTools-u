@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from 'react-helmet';
+
 
 import {
   Navbar,
@@ -20,12 +20,6 @@ const HomePage = () => {
       <Featured />
       {/* <Banner /> */}
       <JustLanded />
-      <Helmet>
-        <meta
-          name="description"
-          content="Find an inventory of the best free AI tools available on the internet! View a large variety of free and latest technological AI tools with a wide range of applications. Find the best free AI tools that vary from Image generation to natural language processing, Use the power of AI without the payment restrictions"
-        />
-      </Helmet>
       <div
         className="flex justify-center items-center
       my-4
