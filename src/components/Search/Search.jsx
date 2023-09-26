@@ -35,13 +35,13 @@ const Search = () => {
       >
         Discover the Best Free AI Tools Available
       </h1>
-      <p
+      <h2
         className="text-center
       md:text-[20px] text-[14px]
       "
       >
         Unlock Your AI Skill with the Ultimate Collection of Free Tools 📣
-      </p>
+      </h2>
 
       {/* Search */}
       <div
