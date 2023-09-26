@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Helmet } from 'react-helmet';
 
 import {
   Navbar,
@@ -20,6 +20,12 @@ const HomePage = () => {
       <Featured />
       {/* <Banner /> */}
       <JustLanded />
+      <Helmet>
+        <meta
+          name="description"
+          content="Your meta description goes here."
+        />
+      </Helmet>
       <div
         className="flex justify-center items-center
       my-4
