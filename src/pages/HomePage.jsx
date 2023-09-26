@@ -23,7 +23,7 @@ const HomePage = () => {
       <Helmet>
         <meta
           name="description"
-          content="Your meta description goes here."
+          content="Find an inventory of the best free AI tools available on the internet! View a large variety of free and latest technological AI tools with a wide range of applications. Find the best free AI tools that vary from Image generation to natural language processing, Use the power of AI without the payment restrictions"
         />
       </Helmet>
       <div
